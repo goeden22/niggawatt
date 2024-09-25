@@ -402,7 +402,6 @@ toggleClass: 'active'
     appearance.forEach((section) => {
         gsap.fromTo(section, {
 
-            toggleClass:'active',
 
         }, {
           
@@ -411,6 +410,7 @@ toggleClass: 'active'
                 trigger: section,
                          start: 'top bottom',
                 toggleActions: 'play none none none',
+                once: true
             }
         });
     });
