@@ -136,7 +136,12 @@ body {
   .mil-mobile-hidden {
     display: none;
   }
+  .order-sm-2-mil {
+    order: 2;
+  }
 }
+
+
 
 section {
   position: relative;
@@ -218,9 +223,17 @@ h1,
   }
 }
 
+
+@media (max-width: 768px) {
+
+  .align-items-sm-center {
+    align-items: center !important;
+    display: flex;
+  }
+}
 @media screen and (max-width: 768px) {
 .mb-s-32 {
-  margin-bottom: 32px;
+  margin-bottom: 32px !important;
 }
 }
 
@@ -497,12 +510,23 @@ a {
   .mil-suptitle {
     margin-bottom: 60px;
   }
+  .mil-h1-sm {
+    font-size: 54px;
+  }
 }
-
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mil-mt-30 {
+  margin-top: 30px;
+}
 .mil-divider {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.mil-img img {
+  width: 100%;
 }
 
 .mil-img-frame {
@@ -538,8 +562,7 @@ link
           align-items: center;
   font-weight: 500;
   text-decoration: underline;
-  letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 
